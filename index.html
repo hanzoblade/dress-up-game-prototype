@@ -20,9 +20,37 @@
 		<p style="font-size: 16px"> Dress Up Game (Prototype) </p>
 		<p> Put clothes on my naked body! </p>
 		<div id = "container">
-			<div id ="charBody">
+			<div id ="stage" class="ui-corner-all">
+				<img class="bg" src="img/background/full/pink.png" alt="Background">
+
 		  		<img class="body" class="default" src="img/body/light_male.png" alt="BaseBody">
 		  	</div>
+
+		  	<div id="swatchesArea" class="ui-corner-all">
+				<div id="expandBtn"><button>Background / Skintone</button></div>
+				<div id="resetBtn"><button>Reset</button></div>
+			
+				<!--/////// GENDER //////// -->
+				<!--
+				<h3>Gender:</h3>
+				<a href="images/base/Skintone/full/light_male.png" class="gender" data-sex='male'>
+					<img src="images/base/Background/thumbnails/male.png" alt="swatch"></a> 
+				<a href="images/base/Skintone/full/light_female.png" class="gender" data-sex='female'>
+					<img src="images/base/Background/thumbnails/female.png" alt="swatch"></a>
+				-->
+				<!--/////// BACKGROUND //////// -->
+				<div id="expandContent" style="display:none">
+					<h3>Background:</h3>
+					<a href="img/background/full/pink.png" class="bg">
+						<img src="img/background/thumbnails/pink.png" alt="swatch"></a> 
+					<a href="img/background/full/green.png" class="bg">
+						<img src="img/background/thumbnails/green.png" alt="swatch"></a>
+					<a href="img/background/full/blue.png" class="bg">
+						<img src="img/background/thumbnails/blue.png" alt="swatch"></a>
+					<a href="img/background/full/tree.png" class="bg">
+						<img src="img/background/thumbnails/tree.png" alt="swatch"></a>				
+				</div>
+		</div>
 
 		  	<div class="hairItems">
 		  	<p> Hair Styles </p> 
@@ -41,7 +69,25 @@
 		  	<div class="hairDrop"> </div>
 		  	<div class="shirtDrop"> </div>
 
-		</div>	 
+		</div>	<!-- end container div -->
+
+		<script>
+			$('#expandBtn').click(function(){
+				$('#expandContent').slideToggle();
+			}); //show background options
+
+			$('#resetBtn').click(function(){
+				//confirm if they want to reset or not first
+				var i = confirm("Are you sure you want to reset everything?");
+				if (i==true){
+					window.location.reload();
+				}else {
+
+				}
+				//reload page
+				
+			}); //reset all draggables on screen  on click
+		</script>
 	</div>
  
 </body>

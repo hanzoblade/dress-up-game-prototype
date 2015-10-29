@@ -2,6 +2,14 @@
 $( init );
 
 function init() {
+
+  //changes the background when thumbnails are clicked  
+  $("#swatchesArea a.bg").click( function() {
+    var changeSrc = $(this).attr("href");
+    $("#stage>img.bg").attr("src", changeSrc);
+    return false;
+  }); 
+
   // draggable for hair
     $(".hairItems > img").draggable( { 
       stack: '.body', 
@@ -77,7 +85,7 @@ function init() {
     function returnCheck (event, ui) {
       var drag = ui.draggable;
       
-      //if another hair style is in #charBody, revert that hair style to default position and replace it with current draggable
+      //if another hair style is in #stage, revert that hair style to default position and replace it with current draggable
     }
 
 

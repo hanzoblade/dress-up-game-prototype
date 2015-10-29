@@ -13,7 +13,7 @@ body {
   font-size: 14px;
   color: #666;
 }
-#charBody{ 
+#stage{ 
   background-color: #eee;
   border: 1px solid #c1c1c1;
   border-bottom: 0px;
@@ -28,16 +28,73 @@ body {
 }
 img.body {
     position: relative; 
-    top: 50%; 
+    bottom: 52.5%;
     margin-top: -128px; 
     z-index: 2;
 } 
+img.bg {
+  z-index: 1;
+  width:100%;
+  height:100%;
+}
+
+  /* ///// BACKGROUND SWATCHES styles ////// */
+  #swatchesArea img {
+    width: 20px;
+    height: 20px;
+  }
+  /* individual links for background thumbs */
+    #swatchesArea a {
+    display: block;
+    float: left;
+    border: 1px solid #999;
+    margin: 2px 2px 7px 2px;
+    width: 20px;
+    height:20px;
+    position:relative;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+  }
+  #swatchesArea { 
+    /* position: absolute; 
+    top: 270px;
+    width: 240px;
+    padding: 0px 5px; */
+    float: left;
+    clear: left;
+    width: 155px;
+    margin-top: -141px;
+    padding: 0 0 0 10px;
+    box-sizing: border-box;
+    position:relative;
+  }
+  #bodyArea, #swatchesArea, .ui-tabs-panel{
+    border: 1px solid #888;
+    /* background: #eee; */
+    background: #fff;
+    width: 155px;
+  }
+  #expandBtn button{
+    position: relative;
+    right:11px;
+    color: #666;
+    font-size: 13px;
+    background: #ddd;
+    text-decoration: none;
+    outline: 0;
+    width:155px;
+    font-family: 'Coming Soon', cursive; 
+  }
+
 .hairItems img{
   padding-right:10px;
 }
 .hairItems {
   background-color: #eee;
   border: 1px solid #c1c1c1;
+  width:100%;
+  float:left;
 }
 .hairDrop{ 
   width: 76px; 
@@ -64,6 +121,8 @@ img.body {
   background-color: #eee;
   border: 1px solid #c1c1c1;
   border-top:1px solid transparent;
+  width:100%;
+  float:left;
 }
 .shirtDrop{ 
   width: 80px; 
@@ -78,5 +137,17 @@ img.body {
 .shirtDrop.hovered {
   opacity:.3;
   z-index: 999;
+}
+
+#resetBtn button{
+    position: relative;
+    right:11px;
+    color: #666;
+    font-size: 13px;
+    background: #ddd;
+    text-decoration: none;
+    outline: 0;
+    width:155px;
+    font-family: 'Coming Soon', cursive; 
 }
 /*/////////// styles end ////////// */
