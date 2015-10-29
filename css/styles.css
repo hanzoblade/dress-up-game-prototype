@@ -1,10 +1,17 @@
-
-/*/////////// test styles start ////////// */
+/*/////////// styles start ////////// */
+@font-face{
+    font-family: 'comingsoon';
+    src: url('../fonts/ComingSoon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 body {
   margin: 30px;
-  font-family: "Georgia", serif;
+  /* font-family: "Georgia", serif; */
+  font-family: 'Coming Soon', cursive;
   line-height: 1.8em;
-  color: #333;
+  font-size: 14px;
+  color: #666;
 }
 #charBody{ 
   background-color: #eee;
@@ -13,14 +20,17 @@ body {
   height:400px;
 }
 #content {
-  margin: 80px 70px;
+  margin: 0px 70px;
   text-align: center;
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
 }
 img.body {
-    position: absolute; left: 50%; top: 40%; margin-left: -58px; margin-top: -128px; z-index: 2;
+    position: relative; 
+    top: 50%; 
+    margin-top: -128px; 
+    z-index: 2;
 } 
 .hairItems img{
   padding-right:10px;
@@ -30,10 +40,13 @@ img.body {
   border: 1px solid #c1c1c1;
 }
 .hairDrop{ 
-  width: 76px; height:36px; background-color:blue; opacity: 0;
+  width: 76px; 
+  height:36px; 
+  background-color:blue; 
+  opacity: 0;
   position:absolute;
-  top:40.3%; left:50%;
-  margin-left: -38px; 
+  top:37.3%; left:50%;
+  margin-left: -37px; 
   margin-top: -125px;
 }
 .hairDrop.hovered {
@@ -52,14 +65,13 @@ img.body {
   border: 1px solid #c1c1c1;
   border-top:1px solid transparent;
 }
-
 .shirtDrop{ 
-  width: 77px; 
-  height:67px; 
+  width: 80px; 
+  height:68px; 
   background-color:blue; 
   opacity: 0;
   position:absolute;
-  top:49.6%; left:50%;
+  top:46.6%; left:50%;
   margin-left: -39px; 
   margin-top: -125px;
 }
@@ -67,4 +79,4 @@ img.body {
   opacity:.3;
   z-index: 999;
 }
-/*/////////// test styles end ////////// */
+/*/////////// styles end ////////// */

@@ -7,7 +7,7 @@ function init() {
       stack: '.body', 
       cursor: 'move',
       snap: '.hairDrop',
-      snapTolerance: 20,
+      snapTolerance: 10,
       containment: '',
       revert: true
 
@@ -28,7 +28,8 @@ function init() {
       snap: '.shirtDrop',
       snapTolerance: 20,
       containment: '',
-      revert: true
+      revert:true
+      
 
     } ); 
 
@@ -57,6 +58,7 @@ function init() {
         }
       // won't revert when you drop it
       ui.draggable.draggable( 'option', 'revert', false );
+      return;
 
  
     }  //end hair drop function
@@ -72,8 +74,9 @@ function init() {
  
     }  //end shirt drop function
 
-    function hairReturn (event, ui) {
+    function returnCheck (event, ui) {
       var drag = ui.draggable;
+      
       //if another hair style is in #charBody, revert that hair style to default position and replace it with current draggable
     }
 
