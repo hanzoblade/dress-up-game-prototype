@@ -48,12 +48,10 @@ img.bg {
     display: block;
     float: left;
     border: 1px solid #999;
-    margin: 2px 2px 7px 2px;
+    margin: 2px 11px 15px 2px;
     width: 20px;
     height:20px;
     position:relative;
-    color: black;
-    text-align: center;
     text-decoration: none;
   }
   #swatchesArea { 
@@ -64,7 +62,7 @@ img.bg {
     float: left;
     clear: left;
     width: 155px;
-    margin-top: -141px;
+    margin-top: -144px;
     padding: 0 0 0 10px;
     box-sizing: border-box;
     position:relative;
